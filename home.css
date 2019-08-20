@@ -1,0 +1,95 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+a {
+    color: unset;
+    text-decoration: none;
+}
+nav {
+    position: relative;
+    font-family: 'Lalezar', cursive;
+    font-size: 2em;
+    color: white;
+}
+h1, h2, h3 {
+    font-family: 'Lalezar', cursive;
+    color: white;
+}
+h2 {
+    font-size: 2em;
+    letter-spacing: 2.5px;
+}
+nav ul {
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px 0;
+    background: linear-gradient(180deg, black, transparent);
+    margin: 0;
+    z-index: 3;
+}
+nav ul li {
+    list-style: none;
+    min-width: 200px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.nav-hover:hover {
+    border-bottom: 2px solid white;
+    color: #c2c7cc;
+}
+.logo p{
+    line-height: 0.9em;
+    margin: 0;
+    font-size: 0.4em;
+}
+.video {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.video .video-mask {
+    position: absolute;
+    background: linear-gradient(0deg, #000000, transparent);
+    z-index: 2;
+    width: 100vw;
+    height: inherit;
+}
+video {
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+}
+.section-2 {
+    padding: 20px 40px;
+    background: url('imagenes/wood.jpg') center center;
+    background-size: cover;
+}
+.section-2 p {
+    font-family: 'Caveat', cursive;
+    margin: auto 20px;
+    font-size: 3em;
+    text-align: center;
+}
+.article-1 {
+    display: grid;
+    grid-template: auto / 1fr 2fr;
+}
+.article-2 {
+    display: grid;
+    grid-template: auto / 2fr 1fr;
+}
+.image {
+    min-height: 300px;
+}
+.image-1 {
+    background: url('imagenes/amigos-1.jpg') center center;
+    background-size: cover;
+}
+.image-2 {
+    background: url('imagenes/restaurant-1.jpg') center center;
+    background-size: cover;
